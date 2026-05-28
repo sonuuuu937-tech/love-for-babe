@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For My Babe ❤️</title>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+.scanner{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#ff4d88,#1a001a);
+}
+.scan-box{
+width:220px;
+height:220px;
+border:4px solid white;
+border-radius:20px;
+position:relative;
+overflow:hidden;
+box-shadow:0 0 30px #ff99cc;
+}
+.scan-line{
+position:absolute;
+width:100%;
+height:6px;
+background:#fff;
+animation:scan 2s infinite;
+}
+@keyframes scan{
+0%{top:0;}
+100%{top:100%;}
+}
+button{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:30px;
+background:#fff;
+color:#ff0066;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+#main{
+display:none;
+padding:20px;
+background:linear-gradient(to bottom,#1a001a,#33001a);
+}
+.gallery{
+display:flex;
+overflow-x:auto;
+gap:10px;
+margin-bottom:20px;
+}
+.gallery img{
+width:180px;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+border:3px solid #ff99cc;
+}
+.note{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:20px;
+line-height:1.9;
+font-size:18px;
+backdrop-filter:blur(10px);
+}
+.title{
+text-align:center;
+font-size:34px;
+margin-bottom:20px;
+color:#ff99cc;
+}
+</style>
+</head>
+<body>
+
+<div class="scanner" id="scanner">
+<h1>Scan My Love ❤️</h1>
+<div class="scan-box">
+<div class="scan-line"></div>
+</div>
+<button onclick="openLove()">Open Surprise</button>
+</div>
+
+<div id="main">
+<div class="title">For My Beautiful Babe ❤️</div>
+
+<div class="gallery">
+<img src="https://i.imgur.com/8Km9tLL.jpeg">
+<img src="https://i.imgur.com/5tj6S7Ol.jpeg">
+<img src="https://i.imgur.com/ZV6gQ0A.jpeg">
+</div>
+
+<div class="note">
+<p>🥺 Babe mene apko bahut dukh diya, gussa kiya aur itne din baat bhi nahi ki... really sorry babe. Me promise karta hun ki ab kabhi apko hurt nahi karunga ❤️</p>
+
+<p>💔 Jab ap mujhse baat nahi karti na babe, sach me dil bahut dukhta hai. Har waqt bas apki yaad ati hai.</p>
+
+<p>💕 Babe me apke bina nahi reh sakta. Jis din apse baat nahi hoti uss din sab kuch adhura lagta hai.</p>
+
+<p>🌹 Ap meri cutest princess ho, meri sweetheart, meri jaan... apki smile meri duniya hai.</p>
+
+<p>🥹 Jab ap dukhi hoti ho na babe, mujhe bhi bahut bura lagta hai. Bas apko hamesha khush dekhna chahta hun.</p>
+
+<p>🤍 Kaash ap mere paas hoti... jab mujhe gussa ata to apko pyar se paas bitha ke mana leta.</p>
+
+<p>🫂 Me apko hug karta, long drive pe le jata, apko apni bahon me rakhta aur bolta — “Babe me huna apke paas.” Ap meri duniya ho ❤️</p>
+
+<p>🚗 Abhi tak travel nahi hua apke saath... lekin me sirf apke saath hi travel karna chahta hun. Long drive, cute moments, sab kuch sirf apke saath ❤️</p>
+</div>
+</div>
+
+<script>
+function openLove(){
+document.getElementById('scanner').style.display='none';
+document.getElementById('main').style.display='block';
+}
+</script>
+
+</body>
+</html>
